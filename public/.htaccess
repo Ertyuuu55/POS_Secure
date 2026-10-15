@@ -1,0 +1,7 @@
+Options -Indexes
+ServerSignature Off
+
+# Blokir file tersembunyi dan file sensitif bila tak sengaja ikut ter-upload ke webroot
+<FilesMatch "^\.|\.(sql|md|log|env|ini|bak)$">
+  Require all denied
+</FilesMatch>

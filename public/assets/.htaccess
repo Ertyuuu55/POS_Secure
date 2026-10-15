@@ -1,0 +1,4 @@
+# Folder aset hanya berisi file statis; tidak ada skrip yang boleh dieksekusi
+<FilesMatch "\.(php|phtml|phar)$">
+  Require all denied
+</FilesMatch>
